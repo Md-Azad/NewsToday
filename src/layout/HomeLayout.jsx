@@ -1,5 +1,6 @@
 import Header from "../components/Header/Header";
 import Headline from "../components/Header/Headline";
+import Navbar from "../components/Navbar/Navbar";
 
 const HomeLayout = () => {
   return (
@@ -11,7 +12,9 @@ const HomeLayout = () => {
           <Headline></Headline>
         </section>
       </header>
-      <nav>my navbar will be here.</nav>
+      <nav className="w-11/12 mx-auto my-4">
+        <Navbar></Navbar>
+      </nav>
       <main>
         <h1>Main context will be here.</h1>
       </main>

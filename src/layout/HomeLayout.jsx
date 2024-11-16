@@ -1,5 +1,6 @@
 import Header from "../components/Header/Header";
 import Headline from "../components/Header/Headline";
+import LeftNavbar from "../components/MainComponents/LeftNavbar";
 import Navbar from "../components/Navbar/Navbar";
 
 const HomeLayout = () => {
@@ -15,8 +16,12 @@ const HomeLayout = () => {
       <nav className="w-11/12 mx-auto my-4">
         <Navbar></Navbar>
       </nav>
-      <main>
-        <h1>Main context will be here.</h1>
+      <main className=" w-11/12 mx-auto pt-5 grid md:grid-cols-12">
+        <aside className="col-span-3">
+          <LeftNavbar></LeftNavbar>
+        </aside>
+        <section className="col-span-6">Main content</section>
+        <aside className="col-span-3">Right Navbar</aside>
       </main>
     </div>
   );
